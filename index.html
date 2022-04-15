@@ -1,0 +1,60 @@
+<<!DOCTYPE html>
+<html>
+  <head>
+    <title>19_이윤서 cgi form </title></head>
+    <script language="javascript" src="19_java.js">
+      </script>
+  <body>
+    <b>텍스트 입력상자</b><hr>
+   학번을 입력하세요:
+<input type="text" name="number"><br>
+  이름을 입력하세요:
+  <input type="text" name="username"><br><br>
+  id를 입력하세요:
+<input type="text" maxlength="8" name="id"name="number"><br><br>
+  이름을 입력하세요:
+<input type="password" name="passwd" size=10>
+<br><br>
+  <b>내부스크립트</ b><br>
+    <script language="javascript">
+      document.write("***여기는 body내 자바스크립트***")
+    </script><br><br>
+
+
+    <b>외부 스크립트</b><br>
+      <button type="button" onclick="test19()">외부</button>
+    <br><br>
+    <b>인라인 스크립트</b><br>
+    <hr color="red">
+    <a href="javascript;alert('환영합니다')">경고 메세지</a>
+
+<br><br>
+<b>스크립트 주석연습</b><br>
+<script language="javascript">
+ document.write("홈페이지 ")//메세지 나타내기
+ //이 문자열은 나타나지 않는다.
+ document.write("body 태그에 자바스크립트 넣기")
+/*자바스크립트의 주석 넣기 연습 */
+</script>
+<br><br>
+<script language="javascript">
+   for (i=1; i<=7; i++){
+    document.write ("<font size=",i,">어서오세요.</font><br>"
+   }
+   </script>
+
+   <br><br>
+   <b>if 문 연습</b><br>
+   <script language="javascript">
+      busy= "바쁨"
+      document.write("<b>당신"+busy+"니까?<br><br>")
+        if(busy =="바쁨")document.write(busy+":지하철을 타세요</b>")
+        if(busy =="안 바쁨")document.write(busy+":버스를 타세요</b>")
+</script>
+
+
+</body>
+
+
+
+</html>
